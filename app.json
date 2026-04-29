@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Budget Snap",
+    "slug": "budget-snap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.budgetsnap.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#3b82f6"
+      },
+      "package": "com.budgetsnap.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "scheme": "budget-snap",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Budget Snap to access your photos.",
+          "cameraPermission": "Allow Budget Snap to access your camera to snap receipts."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
